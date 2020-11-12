@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$amarillo: #f3911e;
+$darkAmarillo: #BF762E;
+$blanco: #ffffff;
+$negro: #1A1A1A;
+$gris: #bbc4c5;
+$lightGris: #e3eef0;
+$darkGris: #808080;
+$azul: #242148;
+$darkAzul: #1B3135;
+$verde: #007E8C;
+$verdeGris: #7BA6B4;
+$uva: #7F3182;
+
+
+$sizeFont: 1em;
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+    font-size: $sizeFont;
+    color: $darkAzul;
+}
+
+.outer-loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/fondo_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.textos {
+    min-height: 50vh;
+    max-height: 60vh;
+    overflow: auto;
+}
+
+.bg-uva {
+    background-color: $uva;
+}
+
+.bck-naranja {
+    background-color: rgba($amarillo, 0.6);
+}
+
+.bck-gris {
+    background-color: rgba($blanco, 0.9);
+}
+
+.fondo_1 {
+    min-height: 100vh;
+    background-image: url('../img/fondo_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .border-right {
+        border-color: $darkAzul !important;
+    }
+}
+
+.fondo_2 {
+    min-height: 100vh;
+    background-image: url('../img/fondo_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo_3 {
+    min-height: 100vh;
+    background-image: url('../img/fondo_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo_4 {
+    min-height: 100vh;
+    background-image: url('../img/fondo_4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo_5 {
+    min-height: 100vh;
+    background-image: url('../img/fondo_5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo_6 {
+    min-height: 100vh;
+    background-image: url('../img/fondo_6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo_7 {
+    min-height: 100vh;
+    background-image: url('../img/fondo_7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.botonera {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a,
+    button {
+        min-width: 45%;
+        max-width: 45%;
+
+        &.btn-personalized_3 {
+            min-width: 49.5%;
+            max-width: 49.5%;
+        }
+    }
+}
+
+.btn-personalized_1 {
+    max-width: fit-content;
+    background-color: $verdeGris;
+    color: $blanco;
+}
+
+.btn-personalized_2 {
+    max-width: fit-content;
+    background-color: $darkAmarillo;
+    color: $negro;
+
+    &:hover {
+        font-weight: 700;
+    }
+
+    &.verde {
+
+        &:hover,
+        &.active {
+            background-color: $verde;
+            color: $blanco;
+        }
+    }
+
+    &.azul {
+
+        &:hover,
+        &.active {
+            background-color: $azul;
+            color: $blanco;
+        }
+    }
+}
+
+.btn-personalized_3 {
+    max-width: fit-content;
+    background-color: $darkGris;
+    color: $blanco;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        font-weight: 700;
+        background-color: $amarillo;
+        color: $blanco;
+    }
+
+    &.active {
+        background-color: $amarillo;
+        color: $blanco;
+    }
+}
+
+.btn-personalized_4 {
+    max-width: fit-content;
+    background-color: transparent;
+    color: $azul;
+    border: 1px solid $azul;
+
+    &:hover,
+    &.active {
+        font-weight: 700;
+        background-color: $azul;
+        color: $blanco;
+    }
+}
+
+.btn-personalized_5 {
+    max-width: fit-content;
+    background-color: $amarillo;
+    color: $blanco;
+    border: 1px solid $amarillo;
+    min-width: 100%;
+
+    &:hover,
+    &.active {
+        font-weight: 700;
+        background-color: $darkAmarillo;
+        color: $blanco;
+    }
+}
+
+.btn-close {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+
+    svg {
+        width: 2em;
+        height: 2em;
+    }
+}
+
+#man-caract,
+#man-instru,
+#man-estruc,
+#med-estruc,
+#med-caract,
+#med-instru {
+    &.hoverable {
+        &:hover {
+            fill: $verde;
+            cursor: pointer;
+        }
+    }
+
+    &.active {
+        fill: $verde;
+    }
+}
+
+#sal-caract,
+#sal-instru,
+#aca-caract,
+#aca-instru,
+#nuq-caract,
+#nuq-instru {
+    &.hoverable {
+        &:hover {
+            fill: $azul;
+            cursor: pointer;
+        }
+    }
+
+    &.active {
+        fill: $azul;
+    }
+}
+
+hr {
+    border-color: $blanco !important;
+
+    &.negro {
+        border-color: $negro !important;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    color: $blanco;
+}
+
+h2 {
+    font-weight: 700;
+    color: rgba($negro, 0.7);
+}
+
+h4 {
+    font-weight: 700;
+    font-size: $sizeFont + 2em;
+    color: rgba($verde, 0.7);
+}
+
+h6 {
+    font-size: $sizeFont + 0.2em;
+    font-weight: 700;
+}
+
+.mapa {
+    svg {
+        position: absolute;
+        width: 90%;
+        top: 10%;
+        left: 5%;
+    }
+}
+
+.menu-title {
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 45%;
+    left: -17%;
+    margin: 0;
+    margin-top: 150px;
+    padding: 0;
+    border-bottom: 1px solid $blanco;
+    color: $blanco;
+    text-align: right;
+
+    h6 {
+        font-size: $sizeFont + 1em
+    }
+}
+
+.carousel-control-prev {
+    left: -55px;
+}
+
+.carousel-control-next {
+    right: -40px;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $verde;
+
+    .nav-item {
+        min-width: 25%;
+        border: 1px solid $verde;
+        border-bottom: 0;
+        border-radius: 15px 15px 0 0;
+        margin: 0 2px;
+        text-align: center;
+
+        .nav-link {
+            border: 0;
+            color: $verde;
+            font-weight: 700;
+
+            &.active {
+                background-color: $verde;
+                color: $blanco;
+                border-radius: 13px 13px 0 0;
+            }
+        }
+    }
+}
+
+.hidener {
+    display: none;
+}
